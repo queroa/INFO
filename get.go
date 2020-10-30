@@ -33,7 +33,7 @@ var config string
 func initialize() {
 	data, err := ioutil.ReadFile("/service/conf")
 	if err != nil {
-		fmt.Println("error reading configuration", err)
+		fmt.Println("error reading config", err)
 		return
 	}
 	config = string(data)

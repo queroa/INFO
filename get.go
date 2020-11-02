@@ -52,7 +52,7 @@ func endpointGetter(w http.ResponseWriter, r *http.Request) {
 	}
 	defer db.Close()
 	w.Header().Set("Content-Type", "application/json")
-	results, err := db.Query("SELECT id,brand,model,horse_power FROM Concesionario.Coches where id=?", ident)
+	results, err := db.Query("SELECT id,brand,model,horse_power FROM Coches where id=?", ident)
 
 	if err != nil {
 		panic(err.Error())

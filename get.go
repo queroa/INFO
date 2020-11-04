@@ -71,8 +71,6 @@ func endpointGetter(w http.ResponseWriter, r *http.Request) {
 			panic(err.Error())
 		}
 		fmt.Fprintln(w, string(b))
-		//		fmt.Println("GET FINAL")
-
 	}
 
 }
